@@ -1,2 +1,7 @@
 # d-console
-simple,unconfigure console for commond line tool
+
+simple, no setting console for command line tool
+
+## install
+
+## related
