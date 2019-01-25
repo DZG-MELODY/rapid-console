@@ -1,13 +1,13 @@
-import dConsole from "../index";
+import rConsole from "../index";
 
-dConsole.title(" welcome to d-console ");
-dConsole.line(2);
-dConsole.plain("default message types:");
-dConsole.split(25);
-dConsole.note("this is note");
-dConsole.info("this is info");
-dConsole.success("this is success");
-dConsole.warning("this is warning");
-dConsole.error("this is error");
-dConsole.split(25);
-dConsole.line(2);
+rConsole.title(" welcome to rapid-console ");
+rConsole.line(2);
+rConsole.plain("default message types:");
+rConsole.split(25);
+rConsole.note("this is note");
+rConsole.info("this is info");
+rConsole.success("this is success");
+rConsole.warning("this is warning");
+rConsole.error("this is error");
+rConsole.split(25);
+rConsole.line(2);

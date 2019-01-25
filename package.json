@@ -1,5 +1,5 @@
 {
-  "name": "d-console",
+  "name": "rapid-console",
   "version": "0.1.1",
   "description": "simple, no setting console for command line tool",
   "main": "./dist/lib/index.js",
