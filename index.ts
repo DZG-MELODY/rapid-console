@@ -1,4 +1,11 @@
-import chalk, { Chalk } from "chalk";
+import chalk from "chalk";
+import {
+  capitalize,
+  formatTitle,
+  formatMessage,
+  outlineMessage,
+  MessageTypes
+} from "./src/utils";
 
 type normalColor =
   | "black"
@@ -8,37 +15,6 @@ type normalColor =
   | "blue"
   | "red"
   | "cyan";
-
-enum MessageTypes {
-  SUCCESS = "SUCCESS",
-  INFO = "INFO",
-  NOTE = "NOTE",
-  WARNING = "WARNING",
-  ERROR = "ERROR"
-}
-
-const COLORS = {
-  SUCCESS: "green",
-  INFO: "blue",
-  NOTE: "white",
-  WARNING: "yellow",
-  ERROR: "red"
-};
-
-const capitalize = (
-  [first, ...rest]: string,
-  lowerRest: boolean = false
-): string =>
-  first.toUpperCase() +
-  (lowerRest ? rest.join("").toLowerCase() : rest.join(""));
-
-const bgColor = (type: MessageTypes): string => `bg${capitalize(COLORS[type])}`;
-
-const formatTitle = (type: MessageTypes) =>
-  ((chalk as any)[bgColor(type)] as Chalk).black("", `${MessageTypes[type]}`, "");
-
-const formatMessage = (type: MessageTypes, message: string): string =>
-  (chalk as any)[COLORS[type]](message);
 
 export default {
   success(message: string): void {
@@ -86,15 +62,31 @@ export default {
     colorNames: Array<normalColor> = ["white", "black"]
   ): void {
     const [foreColor = "white", backgroundColor = "black"] = colorNames;
-    console.log((chalk as any)[`bg${capitalize(backgroundColor)}`][foreColor](message));
+    console.log(
+      (chalk as any)[`bg${capitalize(backgroundColor)}`][foreColor](message)
+    );
   },
   split(n: number = 20, placeHolder: string = "="): void {
     return this.plain(new Array<string>(n).fill(placeHolder).join(""));
   },
   line(n: number = 1): void {
-    while (n <= 0) {
+    while (n > 0) {
       console.log("");
       n -= 1;
     }
+  },
+  title(message: string): void {
+    const padding = 2;
+    const len: number = message.length;
+    const n = len + padding * 2;
+    this.split(n + 2, "*");
+    this.plain(
+      outlineMessage(new Array<string>(len).fill(" ").join(""), padding, "*")
+    );
+    this.plain(outlineMessage(message, padding, "*"));
+    this.plain(
+      outlineMessage(new Array<string>(len).fill(" ").join(""), padding, "*")
+    );
+    this.split(n + 2, "*");
   }
 };
