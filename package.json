@@ -1,8 +1,9 @@
 {
   "name": "rapid-console",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "simple, no setting console for command line tool",
   "main": "./dist/lib/index.js",
+  "types": "./dist/lib/types/index.d.ts",
   "files": [
     "dist"
   ],
