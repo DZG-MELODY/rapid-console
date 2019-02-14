@@ -90,16 +90,22 @@ console a plain message with custom color style
 | "red"
 | "cyan"
 
+---
+
 ### line(n)
 
 console lines with no content
 
 - n: `number`
 
+---
+
 ### split(n,placeHolder)
 
 - n: `number` the count of place holder, default is 20
 - placeHolder: `string` place holder string, default is "\*"
+
+---
 
 ## related
 
