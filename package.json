@@ -1,0 +1,44 @@
+{
+  "name": "rapid-console",
+  "version": "0.1.2",
+  "description": "simple, no setting console for command line tool",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish": "npm run build && npm publish",
+    "test": "ts-node ./test/index.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DZG-MELODY/d-console.git"
+  },
+  "keywords": [
+    "js",
+    "console",
+    "cmd"
+  ],
+  "author": "dzg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DZG-MELODY/d-console/issues"
+  },
+  "homepage": "https://github.com/DZG-MELODY/d-console#readme",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/chalk-animation": "^1.6.0",
+    "@types/node": "^10.12.18",
+    "ts-node": "^8.0.1",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "chalk-animation": "^1.6.0"
+  }
+}
