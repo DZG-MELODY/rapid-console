@@ -1,11 +1,11 @@
 # rapid-console
 
-[changlog>>>>](./CHANGELOG.md)
-
 - simple, unique style console for command line tool.
 - you need not to consider which color to set.
 
 ![rapid console](./assets/example.png)
+
+[changelog>>>>](https://github.com/DZG-MELODY/rapid-console/blob/dev/CHANGELOG.md)
 
 ## install
 
@@ -102,8 +102,21 @@ console lines with no content
 
 ### split(n,placeHolder)
 
+console split line with spec placeholder
+
 - n: `number` the count of place holder, default is 20
 - placeHolder: `string` place holder string, default is "\*"
+
+---
+
+### **async** colorFlash(message,time)
+
+console a message using colorful flash animation
+
+- message: `string`
+- time: `number` the duration of the animation
+
+**note** the method is an async function
 
 ---
 

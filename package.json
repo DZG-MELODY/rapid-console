@@ -1,9 +1,9 @@
 {
   "name": "rapid-console",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "simple, no setting console for command line tool",
   "main": "./dist/lib/index.js",
-  "types": "./dist/lib/types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -30,12 +30,12 @@
   "devDependencies": {
     "@types/chalk": "^2.2.0",
     "@types/chalk-animation": "^1.6.0",
-    "@types/node": "^10.12.18",
-    "ts-node": "^8.0.1",
-    "tslint": "^5.12.1",
-    "tslint-config-prettier": "^1.17.0",
+    "@types/node": "^12.0.10",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.2.4"
+    "typescript": "^3.5.2"
   },
   "dependencies": {
     "chalk": "^2.4.2",
