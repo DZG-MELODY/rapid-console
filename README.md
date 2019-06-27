@@ -5,7 +5,7 @@
 
 ![rapid console](./assets/example.png)
 
-[changelog>>>>](https://github.com/DZG-MELODY/rapid-console/blob/dev/CHANGELOG.md)
+[changelog>>>>](https://github.com/DZG-MELODY/rapid-console/blob/master/CHANGELOG.md)
 
 ## install
 
