@@ -15,7 +15,7 @@
 
 ### Added
 
-- add types file for typescript
+- add types file for typescript
 - finish readme
 
 ## [0.1.1] - 2019-01-27
