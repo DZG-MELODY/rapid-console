@@ -16,7 +16,23 @@ npm i rapid-console -D
 ## usage
 
 ```js
-const RConsole = require("rapid-console").default;
+
+// commonjs
+
+const RConsole = require("rapid-console");
+
+RConsole.note("ABC...");
+
+//...
+```
+
+or
+
+```typescript
+
+// typescript
+
+import RConsole from "rapid-console";
 
 RConsole.note("ABC...");
 

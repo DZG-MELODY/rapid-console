@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1] - 2019-07-01
+
+### Added
+
+- add commonjs export
+
 ## [1.0.0] - 2019-06-25
 
 ### Added

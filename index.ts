@@ -115,3 +115,16 @@ export default {
   line,
   colorFlash
 };
+
+exports = {
+  success,
+  info,
+  note,
+  warning,
+  error,
+  plain,
+  split,
+  title,
+  line,
+  colorFlash
+};
